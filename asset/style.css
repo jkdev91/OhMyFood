@@ -4,7 +4,7 @@ body {
 
 .main-container {
   width: 100%;
-  max-width: 697px;
+  max-width: 768px;
 }
 
 .section-title {
@@ -51,6 +51,15 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.operation {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.operation input {
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
