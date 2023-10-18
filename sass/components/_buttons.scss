@@ -1,0 +1,14 @@
+
+@use '../bases/typography';
+@use '../bases/variables';
+
+// button explorer restaurant
+.btn_resto {
+    width: 218px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(variables.$secondary, variables.$primary);
+    cursor: pointer;
+    @extend %button-title;
+}

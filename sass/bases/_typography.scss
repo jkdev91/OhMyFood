@@ -1,0 +1,31 @@
+
+@use '_variables';
+
+// regle police d'écriture
+
+.section_home-title {
+    font-family: variables.$roboto;
+    font-size: variables.$size_24;
+    font-weight: variables.$weight_700;
+}
+
+.section_menu-title {
+    font-family: variables.$Shrikhand;
+    font-size: variables.$size_28;
+    font-weight: variables.$weight_700;
+}
+
+
+%button-title {
+    font-family: variables.$roboto;
+    font-size: variables.$size_16;
+    font-weight: variables.$weight_500;
+    color: variables.$white;
+}
+
+.card_resto-title {
+    font-family: variables.$roboto;
+    font-size: variables.$size_18;
+    font-weight: variables.$weight_700;
+}
+

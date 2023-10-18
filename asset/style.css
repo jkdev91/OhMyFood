@@ -1,25 +1,50 @@
-body {
-  margin: 0;
-}
-
-.main-container {
-  width: 100%;
-  max-width: 768px;
-}
-
-.section-title {
+.section_home-title {
   font-family: roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
 
-.button-text {
-  font-family: roboto, sans-serif;
-  font-weight: 500;
+.section_menu-title {
+  font-family: shrikhand, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
 }
 
-.button-color {
-  background-image: linear-gradient(#9356DC, #FF79DA);
+.btn_resto {
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.card_resto-title {
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.btn_resto {
+  width: 218px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
+}
+
+.restaurant_container_card img {
+  width: 350px;
+  height: 250px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 768px;
 }
 
 .header__container {
@@ -47,19 +72,38 @@ body {
 }
 
 .reservation {
+  margin: 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  gap: 30px;
   align-items: center;
+}
+.reservation p {
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .operation {
   display: flex;
   flex-direction: column;
+}
+
+.operation_container {
+  display: flex;
+  flex-direction: column;
   gap: 15px;
 }
-.operation input {
+.operation_container input {
   border: none;
+  width: 100%;
+}
+
+.restaurant__container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=style.css.map */

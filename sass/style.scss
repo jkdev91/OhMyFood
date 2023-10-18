@@ -1,34 +1,19 @@
 
 @use 'bases/variables';
+@use 'bases/typography';
+@use 'components/buttons';
+@use 'components/cards';
 
-body {
+* {
     margin: 0;
+    padding: 0;
 }
+
 
 .main-container {
     width: 100%;
     max-width: 768px;
 }
-
-
-
-.section-title {
-    font-family: variables.$roboto;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-
-
-.button-text {
-    font-family: variables.$roboto;
-    font-weight: 500
-}
-
-.button-color {
-    background-image: linear-gradient(variables.$primary, variables.$secondary);
-}
-
 
 
 // header
@@ -61,12 +46,20 @@ body {
 
 // section reservation
 .reservation {
+    margin: 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
 
+    p {
+        font-family: variables.$roboto;
+        font-size: variables.$size_18;
+        font-weight: variables.$weight_300;
+    }
 }
+
 
 
 
@@ -75,10 +68,30 @@ body {
 .operation {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-
-    input{
-    border: none;
-    }
+    
 
 }
+
+.operation_container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+    input{
+        border: none;
+        width:100%;
+        }
+}
+
+//restaurants
+
+.restaurant__container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    object-fit: contain;
+    // box-sizing: border-box;
+
+}
+
+
