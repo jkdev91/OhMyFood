@@ -1,0 +1,19 @@
+
+
+footer {
+    background: #353535;
+    color: white;
+
+    img {
+        width: 150px;
+        filter:brightness(0) invert(1);
+        
+    }
+}
+
+.Footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+
