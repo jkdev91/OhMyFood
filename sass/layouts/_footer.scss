@@ -1,19 +1,31 @@
 
 
 footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     background: #353535;
     color: white;
+    padding: 30px;
 
     img {
         width: 150px;
         filter:brightness(0) invert(1);
         
     }
+
+    .fa-solid {
+        fill: white;
+        font-size: 15px;
+        padding-right: 5px;
+
+    }
 }
 
-.Footer ul {
+Footer ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 5px;
 }
 
 

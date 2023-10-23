@@ -1,11 +1,13 @@
 
+@use'../bases/variables'; 
 
+
+// card des restaurants
 .card {
     height: 251px;
-    background-color: white;
+    background-color: variables.$white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    border: solid;
 
 
     img {
@@ -22,3 +24,39 @@
 }
 
 
+
+// card menu 
+
+
+
+
+.menu__content-card {
+    width: 90%;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: variables.$white;
+    box-sizing: content-box;
+}
+
+.menu__content-card .item {
+    width: 80%;
+    line-height: 30px;
+}
+
+.menu__content-card .price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+}
+
+.menu__content-card .check {
+    display: flex;
+    align-items: center;
+
+    width: 0;
+    opacity: 0;
+}
