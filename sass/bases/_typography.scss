@@ -29,3 +29,11 @@
     font-weight: variables.$weight_700;
 }
 
+
+%badge-title {
+    font-family: variables.$roboto;
+    font-size: variables.$size_14;
+    font-weight: variables.$weight_500;
+    color: variables.$color__badge-text;
+}
+

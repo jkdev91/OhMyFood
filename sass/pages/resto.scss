@@ -8,6 +8,9 @@
     background-color: variables.$background;
     padding: 30px 15px 30px 15px;
     border-radius: 25px 25px 0 0 ;
+    margin-top: -50px;
+    z-index: 10;
+    position: relative;
 }
 
 .menu__content {
@@ -15,11 +18,18 @@
     flex-direction: column;
     gap: 15px;
 
+    p{
+        font-size: medium;
+        font-weight: variables.$weight_300;  
+ 
+     }
+
 }
 
 
 
 .banner {
+    z-index: 1;
 
     img {
         width: 100%;

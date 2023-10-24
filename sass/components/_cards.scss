@@ -1,5 +1,6 @@
 
-@use'../bases/variables'; 
+@use'../bases/variables';
+@use '../bases/typography'; 
 
 
 // card des restaurants
@@ -19,6 +20,7 @@
 
     .card-content {
         padding: 10px 0px 0px 15px;
+
     } 
 
 }
@@ -26,9 +28,6 @@
 
 
 // card menu 
-
-
-
 
 .menu__content-card {
     width: 90%;
@@ -57,6 +56,18 @@
     display: flex;
     align-items: center;
 
-    width: 0;
-    opacity: 0;
+    // width: 0;
+    // opacity: 0;
+}
+
+// badge
+.badge {
+    width: 80px;
+    // height: 29px;
+    background-color: variables.$color__badge-background;
+    padding: 7px 9px 7px 9px;
+    @extend %badge-title;
+    position: relative;
+    left: 80%;
+    top: -150px;
 }
