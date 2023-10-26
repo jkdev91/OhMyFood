@@ -1,28 +1,24 @@
 //header general
 
+
+header {
+    display: flex;
+    justify-content: center;
+
+    nav {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+    }
+}
+
+
 .header__container {
     height: 63px;
     display: flex;
     justify-content: center;
     align-items: center;
 }    
-
-
-// header homepage
-
-.header__location {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #EAEAEA;
-    
-    ::before {
-        font-family: "font awesome 6 free";
-        font-weight: 700;
-        content: "\f3c5 ";
-        margin-right: 15px;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;      
-        }
-}
