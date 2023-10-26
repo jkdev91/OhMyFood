@@ -80,6 +80,7 @@ ul, ol  {
     flex-direction: column;
     gap: 10px;
     padding: 15px;
+    
 
     
 
@@ -95,6 +96,7 @@ ul, ol  {
         display: flex;
         flex-direction: column;
         gap: 15px;
+        counter-reset: number;
 
     }
 
@@ -114,6 +116,24 @@ ul, ol  {
     }
 }
 
+
+.operation_container li::before {
+    display: flex;
+    justify-content: center;
+    content: counter(number);
+    counter-increment: number;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    color: variables.$white;
+    background-color: variables.$primary;
+    position: relative;
+    left: -60px;
+    
+    
+
+}
+
 .operation_container .fa-mobile-screen-button,
 .operation_container .fa-list-ul {
     color: #7E7E7E;
@@ -123,11 +143,8 @@ ul, ol  {
     color: variables.$primary;
 }
 
-.operation_container li::before {
-    content: "";
-    
 
-}
+
 
 
 
