@@ -9,6 +9,8 @@
     background-color: variables.$white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    position: relative;
+    z-index: 1;
 
 
     img {
@@ -61,18 +63,20 @@
     display: flex;
     align-items: center;
 
-    // width: 0;
-    // opacity: 0;
 }
 
 // badge
-.badge {
-    width: 80px;
+.restaurant__container .card:nth-child(1)::before, 
+.restaurant__container .card:nth-child(2)::before {
+    // width: 20px;
     // height: 29px;
+    content: "nouveau";
     background-color: variables.$color__badge-background;
     padding: 7px 9px 7px 9px;
     @extend %badge-title;
-    position: relative;
-    left: 80%;
-    top: -150px;
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+    top: 10px;
+   
 }
