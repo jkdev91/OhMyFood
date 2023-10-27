@@ -27,7 +27,7 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + label>.like {
     color: transparent;
     background-clip: text;
-    background-image: linear-gradient(variables.$secondary, variables.$primary);
+    background-image: -webkit-linear-gradient(variables.$secondary, variables.$primary);
     font-weight: 700;
     
 }

@@ -3,7 +3,7 @@
 @use '../bases/typography'; 
 
 
-// card des restaurants
+// card des restaurants page index
 .card {
     height: 251px;
     background-color: variables.$white;
@@ -32,19 +32,32 @@
 
 }
 
+// badge page index
+.restaurant__container .card:nth-of-type(1)::before { 
+    content: "nouveau";
+    background-color: variables.$color__badge-background;
+    padding: 7px 9px 7px 9px;
+    @extend %badge-title;
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+    top: 10px;
+
+}
 
 
-// card menu 
+
+// card menu pages restos
 
 .menu__content-card {
     width: 90%;
     height: 69px;
     display: flex;
     justify-content: space-between;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 15px;
     background-color: variables.$white;
     box-sizing: content-box;
+    cursor: pointer;
 }
 
 .menu__content-card .item {
@@ -65,15 +78,29 @@
 
 }
 
-// badge
-.restaurant__container .card:nth-of-type(1)::before { 
-    content: "nouveau";
+// check animation page restos
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    border-radius:  0 15px 15px 0 ;
     background-color: variables.$color__badge-background;
-    padding: 7px 9px 7px 9px;
-    @extend %badge-title;
-    position: absolute;
-    z-index: 10;
-    right: 20px;
-    top: 10px;
+    // transform: scale(0);
+    
+    .fa-circle-check {
+        font-size: 30px;
+        color: variables.$white;
+
+    }
+
+    // :active, :focus {
+    //     transform: scale(1);
+    //     transition: transform 500ms ;
+
+    // }
 
 }
+
+
+
