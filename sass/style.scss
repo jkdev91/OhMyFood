@@ -116,15 +116,16 @@ ul, ol  {
     }
 }
 
-
+// counter
 .operation_container li::before {
     display: flex;
     justify-content: center;
+    align-items: center;
     content: counter(number);
     counter-increment: number;
     border-radius: 50%;
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     color: variables.$white;
     background-color: variables.$primary;
     position: relative;

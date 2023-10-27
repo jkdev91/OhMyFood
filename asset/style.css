@@ -23,8 +23,7 @@
   font-weight: 700;
 }
 
-.restaurant__container .card:nth-child(1)::before,
-.restaurant__container .card:nth-child(2)::before {
+.restaurant__container .card:nth-of-type(1)::before {
   font-family: roboto, sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -38,6 +37,21 @@
   border-radius: 25px;
   background-image: linear-gradient(#FF79DA, #9356DC);
   cursor: pointer;
+}
+
+.like {
+  font-size: 20px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + label > .like {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  font-weight: 700;
 }
 
 .card {
@@ -89,8 +103,7 @@
   align-items: center;
 }
 
-.restaurant__container .card:nth-child(1)::before,
-.restaurant__container .card:nth-child(2)::before {
+.restaurant__container .card:nth-of-type(1)::before {
   content: "nouveau";
   background-color: rgb(153, 226, 208);
   padding: 7px 9px 7px 9px;
@@ -267,11 +280,12 @@ ul, ol {
 .operation_container li::before {
   display: flex;
   justify-content: center;
+  align-items: center;
   content: counter(number);
   counter-increment: number;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   color: #ffffff;
   background-color: #9356DC;
   position: relative;

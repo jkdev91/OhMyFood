@@ -66,10 +66,7 @@
 }
 
 // badge
-.restaurant__container .card:nth-child(1)::before, 
-.restaurant__container .card:nth-child(2)::before {
-    // width: 20px;
-    // height: 29px;
+.restaurant__container .card:nth-of-type(1)::before { 
     content: "nouveau";
     background-color: variables.$color__badge-background;
     padding: 7px 9px 7px 9px;
@@ -78,5 +75,5 @@
     z-index: 10;
     right: 20px;
     top: 10px;
-   
+
 }
