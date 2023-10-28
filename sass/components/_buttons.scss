@@ -13,7 +13,10 @@
     @extend %button-title;
 }
 
+
+
 // button like heart
+
 
 .like {
     font-size: 20px;
@@ -27,7 +30,8 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + label>.like {
     color: transparent;
     background-clip: text;
-    background-image: -webkit-linear-gradient(variables.$secondary, variables.$primary);
+    -webkit-background-clip: text;
+    background-image: linear-gradient(variables.$secondary, variables.$primary);
     font-weight: 700;
     
 }
