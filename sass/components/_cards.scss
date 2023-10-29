@@ -50,64 +50,61 @@
 // card menu pages restos
 
 .menu__content-card {
-    width: 90%;
+    width: 100%;
     height: 69px;
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
     background-color: variables.$white;
     box-sizing: content-box;
+    // overflow: hidden;
+    
     cursor: pointer;
 }
 
-.menu__content-card .item {
-    width: 80%;
+.item {
+    width: 70%;
     line-height: 30px;
 }
 
-.menu__content-card .price {
+.price {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     padding-bottom: 15px;
+    // margin-right: -50px;
+    transition: all 0.5s;
 }
 
 .menu__content-card .check {
-    display: flex;
-    align-items: center;
-
-}
-
-// check animation page restos
-.check {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    width: 10%;
+    width: 15%;
     border-radius:  0 15px 15px 0 ;
     background-color: variables.$color__badge-background;
-    // transform: scale(0);
-    
-    .fa-circle-check {
-        font-size: 30px;
-        color: variables.$white;
+    font-size: 30px;
+    color: variables.$white;
+    // margin-right: -80px;
+    // opacity: 0;
+    transition: all 0.5s;
 
+}
+
+input[type="checkbox"]:checked + label>.menu__content-card{
+
+    .price{
+        margin-right: 0;
+        transition: all 1s;
     }
 
-    // :active, :focus {
-    //     transform: scale(1);
-    //     transition: transform 500ms ;
-
-    // }
+    .check{
+        display: flex;
+        margin-right: 0;
+        transition: all 1s;
+        // transform-origin: -10px;
+    }
 
 }
 
-
-.check {
-    
-    transition: opacity 1s;
-    transform-origin: right;
-     ;
-    
-}
 
