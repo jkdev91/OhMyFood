@@ -1,7 +1,8 @@
 
 @use'../bases/variables'; 
 
-.menu {
+
+.menu__container {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -9,11 +10,36 @@
     padding: 30px 15px 30px 15px;
     border-radius: 25px 25px 0 0 ;
     margin-top: -50px;
-    z-index: 10;
+    
     position: relative;
+
+
+    .menu__container__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu__title {
+        position: relative;
+    }
+
+
+
 }
 
-.menu__content {
+.menu__title::before {
+    content:"";
+    display: flex;
+    height: 3px;
+    width: 40px;
+    position: relative;
+    bottom: -30px;
+    background-color: variables.$color__badge-background;
+
+} 
+
+
+.menu__container__list {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -28,16 +54,12 @@
 
 
 
-.banner {
-    z-index: 1;
-
-    img {
-        width: 100%;
-        height: 375px;
-        object-fit: cover;
-    
-    }
+.banner img {
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
 }
+
 
 .boutton__container {
     display: flex;
