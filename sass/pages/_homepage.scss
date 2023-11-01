@@ -1,0 +1,131 @@
+
+
+@use '../bases/' as b;
+
+
+
+
+// section location
+
+.location {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAEAEA;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+    
+    ::before {
+        font-family: "font awesome 6 free";
+        font-weight: 700;
+        content: "\f3c5";
+        margin-right: 15px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;      
+        }
+}
+
+// section reservation
+.reservation {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    
+    p {
+        font-size: b.$size_18;
+        font-weight: b.$weight_300;
+    }
+}
+
+
+// section operation (fonctionnement)
+.operation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.operation_container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px 50px 10px;
+    gap: 15px;
+
+    ol {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        counter-reset: number;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        padding-left: 50px;
+        border-radius: 20px;
+        background-color: #F6F6F6;
+        box-shadow: 0px 4px 5px #00000026;
+    }
+
+    .fa-solid {
+        padding-right: 15px;
+    }
+}
+
+// numerotation (counter)
+.operation_container li::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: counter(number);
+    counter-increment: number;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    color: b.$white;
+    background-color: b.$primary;
+    position: relative;
+    left: -60px;
+}
+
+.operation_container .fa-mobile-screen-button,
+.operation_container .fa-list-ul {
+    color: #7E7E7E;
+}
+
+.operation_container .fa-store {
+    color: b.$primary;
+}
+
+
+// section restaurants
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 10px 50px 10px;
+    background-color: #F6F6F6;
+
+    h2 {
+        padding-left: 5px;
+    }
+
+    p{
+       font-size: medium;
+       font-weight: b.$weight_300;  
+    }
+}
+
+.restaurant__container {
+    display: grid;
+    height: auto;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    position: relative;
+}

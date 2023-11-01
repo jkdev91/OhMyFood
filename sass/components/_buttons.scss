@@ -1,6 +1,6 @@
 
-@use '../bases/typography';
 @use '../bases/variables';
+@use '../bases/typography';
 
 // button explorer restaurant
 .btn_resto {
@@ -41,7 +41,7 @@
     position: absolute;
     z-index: 1;
     left: 90%;
-    top: 70%;
+    top: 70.5%;
 }
 
 .checkbox-container4 {
