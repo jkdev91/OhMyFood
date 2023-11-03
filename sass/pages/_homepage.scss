@@ -3,8 +3,6 @@
 @use '../bases/' as b;
 
 
-
-
 // section location
 
 .location {
@@ -25,7 +23,7 @@
         }
 }
 
-// section reservation
+/* section reservation */
 .reservation {
     margin: 30px;
     display: flex;
@@ -41,7 +39,7 @@
 }
 
 
-// section operation (fonctionnement)
+/* section operation (fonctionnement) */
 .operation {
     display: flex;
     flex-direction: column;
@@ -78,7 +76,7 @@
     }
 }
 
-// numerotation (counter)
+/* numerotation (counter) */
 .operation_container li::before {
     display: flex;
     justify-content: center;
@@ -104,7 +102,7 @@
 }
 
 
-// section restaurants
+/* section restaurants */
 .restaurant {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,35 @@
+
+@use '../bases/' as b;
+
+// button like heart
+
+
+
+.boxtest {
+    position: relative;
+}
+
+.checkbox-container {
+    position: relative;
+    z-index: 1;
+    left: 90%;
+    top: -15%;
+}
+
+.like {
+font-size: 30px;
+}
+
+input[type="checkbox"] {
+display: none;
+
+}
+
+input[type="checkbox"]:checked + a label>.like,
+input[type="checkbox"]:checked + label>.like {
+color: transparent;
+background-clip: text;
+-webkit-background-clip: text;
+background-image: linear-gradient(b.$secondary, b.$primary);
+font-weight: 700;
+}

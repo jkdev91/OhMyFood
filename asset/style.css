@@ -39,50 +39,6 @@
   cursor: pointer;
 }
 
-.checkbox-container1 {
-  position: absolute;
-  z-index: 1;
-  left: 90%;
-  top: 20%;
-}
-
-.checkbox-container2 {
-  position: absolute;
-  z-index: 1;
-  left: 90%;
-  top: 45%;
-}
-
-.checkbox-container3 {
-  position: absolute;
-  z-index: 1;
-  left: 90%;
-  top: 70.5%;
-}
-
-.checkbox-container4 {
-  position: absolute;
-  z-index: 1;
-  left: 90%;
-  top: 96%;
-}
-
-.like {
-  font-size: 30px;
-}
-
-input[type=checkbox] {
-  display: none;
-}
-
-input[type=checkbox]:checked + label > .like {
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  font-weight: 700;
-}
-
 /* card des restaurants page index.html */
 .card {
   height: 251px;
@@ -100,8 +56,8 @@ input[type=checkbox]:checked + label > .like {
 }
 .card .card-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 5px;
   padding: 10px 30px 0px 15px;
 }
 
@@ -189,6 +145,34 @@ input[type=checkbox]:checked + label .menu__content::after {
   width: 60px;
 }
 
+.boxtest {
+  position: relative;
+}
+
+.checkbox-container {
+  position: relative;
+  z-index: 1;
+  left: 90%;
+  top: -15%;
+}
+
+.like {
+  font-size: 30px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + a label > .like,
+input[type=checkbox]:checked + label > .like {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  font-weight: 700;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -250,6 +234,7 @@ Footer ul {
   -webkit-font-smoothing: antialiased;
 }
 
+/* section reservation */
 .reservation {
   margin: 30px;
   display: flex;
@@ -263,6 +248,7 @@ Footer ul {
   font-weight: 300;
 }
 
+/* section operation (fonctionnement) */
 .operation {
   display: flex;
   flex-direction: column;
@@ -296,6 +282,7 @@ Footer ul {
   padding-right: 15px;
 }
 
+/* numerotation (counter) */
 .operation_container li::before {
   display: flex;
   justify-content: center;
@@ -320,6 +307,7 @@ Footer ul {
   color: #9356DC;
 }
 
+/* section restaurants */
 .restaurant {
   display: flex;
   flex-direction: column;
@@ -396,13 +384,14 @@ Footer ul {
   justify-content: center;
 }
 
-/* animation loading menu-container*/
-@keyframes starting {}
 * {
   margin: 0;
   padding: 0;
-  font-family: roboto, sans-serif;
   box-sizing: border-box;
+}
+
+body {
+  font-family: roboto, sans-serif;
 }
 
 a {

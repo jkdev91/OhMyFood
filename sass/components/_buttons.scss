@@ -1,6 +1,7 @@
 
 @use '../bases/variables';
 @use '../bases/typography';
+@use '../bases/' as b; 
 
 // button explorer restaurant
 .btn_resto {
@@ -8,68 +9,8 @@
     height: 50px;
     border: none;
     border-radius: 25px;
-    background-image: linear-gradient(variables.$secondary, variables.$primary);
+    background-image: linear-gradient(b.$secondary, b.$primary);
     cursor: pointer;
     @extend %button-title;
-}
-
-
-
-// button like heart
-
-    .checkbox-container1 {
-        
-        // height: 50px;
-        position: absolute;
-        z-index: 1;
-    left: 90%;
-    top: 20%;
-}
-
-.checkbox-container2 {
-        
-    // height: 50px;
-    position: absolute;
-    z-index: 1;
-    left: 90%;  
-    top: 45%;
-}
-
-.checkbox-container3 {
-        
-    // height: 50px;
-    position: absolute;
-    z-index: 1;
-    left: 90%;
-    top: 70.5%;
-}
-
-.checkbox-container4 {
-        
-    // height: 50px;
-    position: absolute;
-    z-index: 1;
-    left: 90%;
-    top: 96%;
-}
-
-
-.like {
-    font-size: 30px;
-}
-
-input[type="checkbox"] {
-    display: none;
-
-}
-
-// input[type="checkbox"]:checked + a label>.like,
-input[type="checkbox"]:checked + label>.like {
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(variables.$secondary, variables.$primary);
-    font-weight: 700;
-    
 }
 
