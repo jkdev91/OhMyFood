@@ -12,5 +12,11 @@
     background-image: linear-gradient(b.$secondary, b.$primary);
     cursor: pointer;
     @extend %button-title;
+
+    &:hover {
+        opacity: 0.8;
+        font-size: 20px;
+
+    }
 }
 
