@@ -8,9 +8,19 @@ footer {
     color: white;
     padding: 30px;
 
+    @media (min-width: 1024px)  {
+        flex-direction: row-reverse;
+        gap: 80px;
+       
+    }
+
     img {
         width: 150px;
         filter:brightness(0) invert(1);
+
+        @media (min-width: 1024px)  {
+            width: 100px;
+        }
         
     }
 
@@ -26,6 +36,12 @@ Footer ul {
     display: flex;
     flex-direction: column;
     gap: 5px;
+
+    @media (min-width: 1024px)  {
+        flex-direction: row;
+        gap: 20px;
+       
+    }
 }
 
 
