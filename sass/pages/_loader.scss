@@ -1,0 +1,57 @@
+
+@use '../bases/' as b;
+
+
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: linear-gradient(b.$secondary, b.$primary);
+    height: 100vh;
+    width: 100vw;
+    font-size: 40px;
+    font-family: b.$Shrikhand;
+    z-index: 100;
+    animation: loaderOut 2s forwards;
+    animation-delay: 4s;
+    transform-origin: top;
+    gap: 15px;
+}
+
+
+@keyframes loaderOut {
+    to {
+        transform:translateY(100px);
+        opacity:0; 
+        z-index: -1;
+    }
+}
+
+.loader {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 6px solid rgba(255,255,255,0.5);
+    position: relative;
+}
+
+
+.loader::after {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top: 6px solid #fff;
+    animation: spin 1s linear 4;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+
+    100% {transform: rotate(360deg);}
+
+   
+}
