@@ -10,11 +10,13 @@
     border: none;
     border-radius: 25px;
     background-image: linear-gradient(b.$secondary, b.$primary);
+    box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     @extend %button-title;
 
     &:hover {
         opacity: 0.8;
+        box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.4);
     }
 }
 
