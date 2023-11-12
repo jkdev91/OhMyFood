@@ -8,6 +8,11 @@ footer {
     color: white;
     padding: 30px;
 
+    @media (min-width: 768px) {
+        align-items: center;
+        gap: 20px;
+    }   
+
     @media (min-width: 1024px)  {
         flex-direction: row-reverse;
         gap: 80px;
@@ -36,6 +41,8 @@ Footer ul {
     display: flex;
     flex-direction: column;
     gap: 5px;
+
+    
 
     @media (min-width: 1024px)  {
         flex-direction: row;

@@ -1,6 +1,6 @@
 
-// @use'../bases/variables';
-// @use '../bases/typography'; 
+@use'../bases/variables';
+@use '../bases/typography'; 
 @use '../bases/' as b;
 
 
@@ -28,24 +28,22 @@
         padding: 10px 30px 0px 15px;
 
     } 
-
-
-
 }
 
 /* badge page index.html */
-.boxtest:nth-child(1)::before,
-.boxtest:nth-child(2)::before  { 
+.boxtest:nth-of-type(1)::before,
+.boxtest:nth-of-type(2)::before  { 
     content: "nouveau";
+    text-align: center;
     background-color: b.$color__badge-background;
     padding: 7px 9px 7px 9px;
     @extend %badge-title;
     position: absolute;
     z-index: 10;
-    left: 85%;
-    top: 30px;
+    width: 60px;
+    right: 20px;
+    top: 20px;
 }
-
 
 
 /* card menu pages restos*/
@@ -57,8 +55,6 @@
 
     .MenuContainer__course {
         display: flex;
-        // flex-direction: column;
-        // gap: 15px;
         width: 100%;
         border-radius: 15px;
         background-color: b.$white;
@@ -66,14 +62,11 @@
         box-sizing: content-box; 
         box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
         cursor: pointer;
-        animation: enter 1.5s ;
+        animation: enter 1500ms;
         transform-origin: right;
     }
 
 }
-
-
-
 
 .item-description {
     width: calc(100% - 50px);
@@ -85,12 +78,8 @@
     width: 50px;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 15px;
-    
-    
+    padding-bottom: 15px;  
 }
-
-
 
 .item-check {
     display: flex;
@@ -100,13 +89,8 @@
     background-color: b.$color__badge-background;
     color: b.$white;
     border-radius:  0 15px 15px 0 ;
-    font-size: 20px;
-    transition: all 0.5s ease-in-out;
-
-
+    font-size: 30px;
 }
-
-
 
 .MenuContainer__course:hover{
 
@@ -116,13 +100,30 @@
      }
         
     .item-check{
-        width: 50px; 
+        width: 80px; 
         transition: all 0.5s ease-in-out; 
         }
 }
 
 
+/* animation loading des menus*/
+@keyframes enter {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{ 
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
     
+@for $i from 1 to 9 {
+  .MenuContainer__course:nth-of-type(#{$i}) {
+    animation-delay: $i * 150ms;
+  }
+}
 
 
 

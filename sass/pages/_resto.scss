@@ -22,13 +22,21 @@
     margin-top: -50px;
     position: relative;
 
+    @media (min-width:1024px) {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 
     .MenuContainer__header {
         display: flex;
-        // justify-content: space-between;
-        // position: relative;
-    }
 
+        @media (min-width:1024px) {
+            justify-content: center;
+            gap:15px;
+        }
+    }
 
 }
 
@@ -38,7 +46,6 @@
     font-weight: b.$weight_300;
 }
 
-
 .MenuContainer__title::before {
     content:"";
     display: flex;
@@ -47,19 +54,12 @@
     position: relative;
     bottom: -30px;
     background-color: b.$color__badge-background;
-
-} 
-
+}
 
 .item-description p {
     font-size: b.$size_18;
     font-weight: b.$weight_300;  
-
 }
-
-
-
-
 
 .boutton__container {
     display: flex;

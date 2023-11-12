@@ -10,6 +10,7 @@
 }
 
 .checkbox-container {
+    width: 30px;
     position: relative;
     z-index: 1;
 }
@@ -17,16 +18,14 @@
 .test1{
     left: 90%;
     top: -15%;
-    }
+}
 
-    .test2{
-    // left: 50px;
-    // top: -15%;
+.test2{
     position: static;
     display: flex;
     justify-content: space-between;
-
-    }
+    align-items: center;
+}
 
 .like {
 font-size: 30px;
@@ -34,7 +33,6 @@ font-size: 30px;
 
 input[type="checkbox"] {
 display: none;
-
 }
 
 input[type="checkbox"]:checked + a label>.like,

@@ -11,7 +11,10 @@
     align-items: center;
     justify-content: center;
     background-color: #EAEAEA;
-    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.15);
+    font-family: b.$roboto;
+    font-size: b.$size_16;
+    font-weight: b.$weight_500;
     
     ::before {
         font-family: "font awesome 6 free";
@@ -43,21 +46,26 @@
 .operation {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     padding: 15px;
+    margin-bottom: 30px;
+
+    @media (min-width:1024px) {
+        padding-left: 10%;
+    }
 }
 
 .operation_container {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 10px 50px 10px;
-    gap: 15px;
-
     ol {
         display: flex;
         flex-direction: column;
         gap: 15px;
         counter-reset: number;
+
+        @media (min-width: 768px)  {
+            flex-direction: row;
+            gap: 20px;
+        }
     }
 
     li {
@@ -65,14 +73,20 @@
         align-items: center;
         width: 100%;
         height: 70px;
-        padding-left: 50px;
+        padding-left: 20px;
         border-radius: 20px;
         background-color: #F6F6F6;
         box-shadow: 0px 4px 5px #00000026;
-    }
+        font-size: 16px;
 
+        @media (min-width: 1024px)  {
+            width: 29%;
+            padding-left: 10px; 
+        }
+    }
+ 
     .fa-solid {
-        padding-right: 15px;
+        padding-right: 10px;
     }
 }
 
@@ -89,16 +103,27 @@
     color: b.$white;
     background-color: b.$primary;
     position: relative;
-    left: -60px;
+    left: -30px;
+
+    @media (min-width: 768px)  {
+        left: -15px; 
+    }
 }
 
 .operation_container .fa-mobile-screen-button,
-.operation_container .fa-list-ul {
+.operation_container .fa-list-ul,
+.operation_container .fa-store {
     color: #7E7E7E;
 }
 
-.operation_container .fa-store {
+.operation_container li:hover {
+
+    .fa-mobile-screen-button,
+    .fa-list-ul,
+    .fa-store {
     color: b.$primary;
+    font-size: 20px;
+    }
 }
 
 
@@ -109,6 +134,11 @@
     gap: 30px;
     padding: 50px 10px 50px 10px;
     background-color: #F6F6F6;
+
+    @media (min-width:1024px) {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 
     h2 {
         padding-left: 5px;
@@ -124,6 +154,13 @@
     display: grid;
     height: auto;
     grid-template-rows: repeat(4, 1fr);
-    gap: 20px;
+    gap: 10px;
     position: relative;
+
+    @media (min-width: 768px)  {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+        row-gap: 10px;
+    }
 }

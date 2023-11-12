@@ -13,8 +13,8 @@
     font-size: 40px;
     font-family: b.$Shrikhand;
     z-index: 100;
-    animation: loaderOut 2s forwards;
-    animation-delay: 4s;
+    animation: loaderOut 1s forwards;
+    animation-delay: 3s;
     transform-origin: top;
     gap: 15px;
 }
@@ -22,7 +22,8 @@
 
 @keyframes loaderOut {
     to {
-        transform:translateY(100px);
+        // transform:translateY(100px);
+        display: none;
         opacity:0; 
         z-index: -1;
     }
@@ -45,13 +46,11 @@
     border-radius: 50px;
     border: 6px solid transparent;
     border-top: 6px solid #fff;
-    animation: spin 1s linear 4;
+    animation: spin 1s linear 3;
 }
 
 @keyframes spin {
     0% {transform: rotate(0deg);}
 
-    100% {transform: rotate(360deg);}
-
-   
+    100% {transform: rotate(360deg);}   
 }
