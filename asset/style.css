@@ -461,7 +461,7 @@ Footer ul {
   margin-top: -50px;
   position: relative;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .MenuContainer {
     margin-left: 10%;
     margin-right: 10%;
