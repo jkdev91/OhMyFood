@@ -31,8 +31,8 @@
 }
 
 /* badge page index.html */
-.boxtest:nth-of-type(1)::before,
-.boxtest:nth-of-type(2)::before  { 
+.restaurant__containerCheck:nth-of-type(1)::before,
+.restaurant__containerCheck:nth-of-type(2)::before  { 
     content: "nouveau";
     text-align: center;
     background-color: b.$color__badge-background;
@@ -78,7 +78,7 @@
     width: 50px;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 15px;  
+    padding-bottom: 20px;  
 }
 
 .item-check {
@@ -91,6 +91,15 @@
     border-radius:  0 15px 15px 0 ;
     font-size: 30px;
 }
+
+.item-description p,
+.item-description h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 auto;
+}
+
 
 .MenuContainer__course:hover{
 
