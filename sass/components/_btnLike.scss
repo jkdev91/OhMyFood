@@ -4,16 +4,13 @@
 // button like heart
 
 
-
 .restaurant__containerCheck {
     position: relative;
 }
 
-.checkbox-container {
-    width: 30px;
-    position: relative;
-    z-index: 1;
-}
+.like {
+    font-size: 30px;
+    }
 
 .positionheart__homepage{
     left: 90%;
@@ -27,14 +24,14 @@
     align-items: center;
 }
 
-.like {
-font-size: 30px;
-}
 
+// simuler un evenement onclick avec le input checkbox
+// cacher le checkbox
 input[type="checkbox"] {
 display: none;
 }
 
+// remplir le coeur d'une couleur gradient 
 input[type="checkbox"]:checked + a label>.like,
 input[type="checkbox"]:checked + label>.like {
 color: transparent;
