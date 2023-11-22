@@ -8,6 +8,12 @@
     position: relative;
 }
 
+.checkbox-container {
+    width: 30px;
+    position: relative;
+    z-index: 1;
+  }
+
 .like {
     font-size: 30px;
     }
@@ -38,5 +44,9 @@ color: transparent;
 background-clip: text;
 -webkit-background-clip: text;
 background-image: linear-gradient(b.$secondary, b.$primary);
+transition : all 600ms ease-in;
 font-weight: 700;
+
+
 }
+

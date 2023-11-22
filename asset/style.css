@@ -194,6 +194,10 @@
   z-index: 1;
 }
 
+.like {
+  font-size: 30px;
+}
+
 .positionheart__homepage {
   left: 90%;
   top: -15%;
@@ -206,10 +210,6 @@
   align-items: center;
 }
 
-.like {
-  font-size: 30px;
-}
-
 input[type=checkbox] {
   display: none;
 }
@@ -220,6 +220,7 @@ input[type=checkbox]:checked + label > .like {
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: all 600ms ease-in;
   font-weight: 700;
 }
 
